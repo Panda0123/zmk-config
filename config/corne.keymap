@@ -36,6 +36,55 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        caps-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <12 16>;
+        };
+
+        caps-delete {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <15 12>;
+        };
+
+        caps-delete-word {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <12 2>;
+        };
+
+        left-arrow {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <12 18>;
+        };
+
+        down-arrow {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <12 19>;
+        };
+
+        up-arrow {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <12 20>;
+        };
+
+        right-arrow {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <12 21>;
+        };
+
+        start-line {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <12 8>;
+        };
+
+        end-line {
+            bindings = <&kp LG(RIGHT_ARROW)>;
+            key-positions = <12 9>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
